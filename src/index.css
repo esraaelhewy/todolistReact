@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(37, 37, 37);
+  color:gold;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.text-center{
+  text-align:center;
+  margin-bottom:20px;
+  font-size: 40px;
+  font-style: italic;
+}
+.container{
+  width:60%;
+  margin:10% auto;
+  text-align: center;
+}
+.ListItems{
+  background-color: rgb(55, 55, 55);
+  color:white;
+}
+.ListItems p{
+  margin:0;
+  padding:10px 0px;
+  color:gold;
+}
+.ListItems span{
+  display: inline-block;
+  padding:10px 0px;
+  font-size:20px;
+  border:1px solid gold;
+}
+.ListItems .title{
+  background-color: rgb(240, 207, 18);
+  color:white;
+  font-size: 25px;
+}
+.ListItems span.name, form input[type=text]{
+  width:60%;
+  text-transform: capitalize;
+}
+.ListItems span.age, form input[type=number]{
+  width:30%;
+}
+.ListItems span.action, form input[type=submit]{
+  width:10%;
+  cursor: pointer;
+}
+.ListItems span.icon{
+  color:gold;
+}
+form input{
+  padding:10px;
+  background-color: rgb(255, 238, 142);
+  border:1px solid rgb(240, 207, 18);
+  outline-color: rgb(219, 186, 3);
+}
+
+form input[type=submit]{
+  background-color: gold;
+  color:rgb(72, 69, 69);
+  padding:0px 10px;
+  font-size: 18px;
+  text-align: center;
+  border:1px solid gold;
+  height:38px;
+}
+
+@media (max-width:800px) {
+  .container{
+    width:100%;
+    margin:5% auto;
+  }
+  .text-center{
+    text-align:center;
+    margin-bottom:10px;
+    font-size: 32px;
+    font-style: italic;
+  }
+  .ListItems p{
+    margin:0;
+    padding:5px 0px;
+    color:gold;
+  }
+  .ListItems span{
+    display: inline-block;
+    padding:5px 0px;
+    font-size:18px;
+    border:1px solid gold;
+  }
+  .ListItems .title{
+    background-color: rgb(240, 207, 18);
+    color:white;
+    font-size: 20px;
+    width:fit-content;
+    padding:0px 5px;
+  }
+  .ListItems span.name, form input[type=text]{
+    width:40%;
+    text-transform: capitalize;
+  }
+  .ListItems span.age, form input[type=number]{
+    width:30%;
+  }
+  .ListItems span.action, form input[type=submit]{
+    width:30%;
+    cursor: pointer;
+  }
+  form input{
+    padding:5px;
+  }
+
+  form input[type=submit]{
+    background-color: gold;
+    color:rgb(72, 69, 69);
+    padding:0px 5px;
+    font-size: 16px;
+    text-align: center;
+    border:1px solid gold;
+    height:27px;
+  }
+}
+@media (min-width:800px) and (max-width:1200px){
+  .container{
+    width:100%;
+    margin:5% auto;
+  }
+  .ListItems span.name, form input[type=text]{
+    width:35%;
+    text-transform: capitalize;
+  }
+  .ListItems span.age, form input[type=number]{
+    width:30%;
+  }
+  .ListItems span.action, form input[type=submit]{
+    width:35%;
+    cursor: pointer;
+  }
+  form input[type=submit]{
+    background-color: gold;
+    color:rgb(72, 69, 69);
+    padding:0px 10px;
+    font-size: 20px;
+    text-align: center;
+    border:1px solid gold;
+    height:40px;
+  }
+}
